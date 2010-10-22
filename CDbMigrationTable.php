@@ -215,7 +215,7 @@ class CDbMigrationTable {
      *  @param $type    The type of the field to add.
      *  @param $options The extra options to pass to the column.
      */
-    protected function addField($name, $type, $options=null) {
+    public function addField($name, $type, $options=null) {
         $this->columns[] = array($name, $type, $options);
     }
     
